@@ -32,7 +32,7 @@ New custom fields:
 Via Composer
 
 ``` bash
-$ composer require monstrex/voyager-extension
+$ composer require lamtin222/voyager-extension
 ```
 
 Then run migrations:
