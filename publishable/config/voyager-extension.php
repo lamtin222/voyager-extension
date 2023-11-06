@@ -56,8 +56,8 @@ return [
     /*
     |
     | You can enable or disable the custom path and urls generator for medialibrary images
-    | at MonstreX\VoyagerExtension\Generators\MediaLibraryPathGenerator
-    | and at MonstreX\VoyagerExtension\Generators\MediaLibraryUrlGenerator
+    | at Lamtin222\VoyagerExtension\Generators\MediaLibraryPathGenerator
+    | and at Lamtin222\VoyagerExtension\Generators\MediaLibraryUrlGenerator
     |
     */
 

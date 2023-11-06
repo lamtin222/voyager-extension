@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension;
+namespace Lamtin222\VoyagerExtension;
 
 class VoyagerExtension
 {

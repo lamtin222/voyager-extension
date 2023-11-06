@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Controllers;
+namespace Lamtin222\VoyagerExtension\Controllers;
 
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Http\Request;

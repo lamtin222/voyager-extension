@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Facades;
+namespace Lamtin222\VoyagerExtension\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

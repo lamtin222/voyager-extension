@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Controllers;
+namespace Lamtin222\VoyagerExtension\Controllers;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
@@ -15,13 +15,13 @@ use TCG\Voyager\Http\Controllers\Controller;
 use Illuminate\Support\Facades\View;
 use TCG\Voyager\Facades\Voyager;
 
-use MonstreX\VoyagerExtension\ContentTypes\AdvImageContentType;
-use MonstreX\VoyagerExtension\ContentTypes\AdvMediaFilesContentType;
-use MonstreX\VoyagerExtension\ContentTypes\AdvFieldsGroupContentType;
-use MonstreX\VoyagerExtension\ContentTypes\AdvPageLayoutContentType;
-use MonstreX\VoyagerExtension\ContentTypes\AdvInlineSetContentType;
+use Lamtin222\VoyagerExtension\ContentTypes\AdvImageContentType;
+use Lamtin222\VoyagerExtension\ContentTypes\AdvMediaFilesContentType;
+use Lamtin222\VoyagerExtension\ContentTypes\AdvFieldsGroupContentType;
+use Lamtin222\VoyagerExtension\ContentTypes\AdvPageLayoutContentType;
+use Lamtin222\VoyagerExtension\ContentTypes\AdvInlineSetContentType;
 
-use MonstreX\VoyagerExtension\ContentTypes\Services\AdvInlineSetService;
+use Lamtin222\VoyagerExtension\ContentTypes\Services\AdvInlineSetService;
 
 
 class VoyagerExtensionBaseController extends VoyagerBaseController

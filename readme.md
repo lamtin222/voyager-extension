@@ -43,7 +43,7 @@ $ php artisan migrate
 
 Publish config if you need:
 ```
-$ php artisan vendor:publish --provider="MonstreX\VoyagerExtension\VoyagerExtensionServiceProvider" --tag="config"
+$ php artisan vendor:publish --provider="Lamtin222\VoyagerExtension\VoyagerExtensionServiceProvider" --tag="config"
 ```
 
 To use Image fields you need publish and migrate [laravel-medialibrary](https://docs.spatie.be/laravel-medialibrary/) resources
@@ -105,8 +105,8 @@ Configure
 
 /*
 | You can enable or disable the custom path and urls generator for medialibrary images
-| at MonstreX\VoyagerExtension\Generators\MediaLibraryPathGenerator
-| and at MonstreX\VoyagerExtension\Generators\MediaLibraryUrlGenerator
+| at Lamtin222\VoyagerExtension\Generators\MediaLibraryPathGenerator
+| and at Lamtin222\VoyagerExtension\Generators\MediaLibraryUrlGenerator
 */
 'use_media_path_generator' => true,
 'use_media_url_generator' => true,
@@ -509,7 +509,7 @@ Each field also can have additional common options:
 Prepare your model and add *InlineSetTrait* trait:
 ```php
 ...
-use MonstreX\VoyagerExtension\Traits\InlineSetTrait;
+use Lamtin222\VoyagerExtension\Traits\InlineSetTrait;
 ...
 class Page extends Model
 {
@@ -531,7 +531,7 @@ Also, the trait is necessary to remove related sources data in corresponding tab
 
 >### Field: VE Page Layout
 
-The special content field type. Available only if [Voyager Site](https://github.com/MonstreX/voyager-site) package is installed.
+The special content field type. Available only if [Voyager Site](https://github.com/Lamtin222/voyager-site) package is installed.
 Provides a subsystem to organize the layout of content fields, blocks, and forms on a page.
 
 ![VE Page Layout](/docs/images/page-layout.png)
@@ -542,8 +542,8 @@ BREAD Json Option for this field:
     "layout_fields": {
         "content": "Content"
     },
-    "block_model": "MonstreX\\VoyagerSite\\Models\\Block",
-    "form_model": "MonstreX\\VoyagerSite\\Models\\Form",
+    "block_model": "Lamtin222\\VoyagerSite\\Models\\Block",
+    "form_model": "Lamtin222\\VoyagerSite\\Models\\Form",
     "style_classes": "col-md-3"
 }
 ```
@@ -727,5 +727,5 @@ $field_title_ru = str_trans($field_data,'ru');
 
 If you discover any security related issues, please email author email instead of using the issue tracker.
 
-[link-packagist]: https://packagist.org/packages/monstrex/testpackage
-[link-downloads]: https://packagist.org/packages/monstrex/testpackage
+[link-packagist]: https://packagist.org/packages/Lamtin222/testpackage
+[link-downloads]: https://packagist.org/packages/Lamtin222/testpackage

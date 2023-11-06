@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\ContentTypes\Services;
+namespace Lamtin222\VoyagerExtension\ContentTypes\Services;
 
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\Model;

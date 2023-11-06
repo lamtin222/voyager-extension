@@ -1,9 +1,9 @@
 <?php
 
-namespace MonstreX\VoyagerExtension\Traits;
+namespace Lamtin222\VoyagerExtension\Traits;
 use Illuminate\Database\Eloquent\Model;
 
-use MonstreX\VoyagerExtension\ContentTypes\Services\AdvInlineSetService as InlineSetService;
+use Lamtin222\VoyagerExtension\ContentTypes\Services\AdvInlineSetService as InlineSetService;
 
 trait InlineSetTrait
 {

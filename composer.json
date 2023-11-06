@@ -1,5 +1,5 @@
 {
-     "name": "monstrex/voyager-extension",
+     "name": "lamtin222/voyager-extension",
      "description": "Voyager Admin Panel Extension",
      "license": "MIT",
      "authors": [
@@ -10,7 +10,7 @@
        }
      ],
      "minimum-stability": "dev",
-     "homepage": "https://github.com/monstrex/voyager-extension",
+     "homepage": "https://github.com/lamtin222/voyager-extension",
      "keywords": [
        "Laravel",
        "Voyager",
@@ -29,18 +29,18 @@
     "autoload": {
         "psr-4": {
             "App\\": "app/",
-            "MonstreX\\VoyagerExtension\\": "src/"
+            "Lamtin222\\VoyagerExtension\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "MonstreX\\VoyagerExtension\\Tests\\": "tests"
+            "Lamtin222\\VoyagerExtension\\Tests\\": "tests"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "MonstreX\\VoyagerExtension\\VoyagerExtensionServiceProvider"
+                "Lamtin222\\VoyagerExtension\\VoyagerExtensionServiceProvider"
             ]
         }
     }

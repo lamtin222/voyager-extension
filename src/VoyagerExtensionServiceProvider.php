@@ -1,6 +1,6 @@
 <?php
 
-namespace MonstreX\VoyagerExtension;
+namespace Lamtin222\VoyagerExtension;
 
 use Illuminate\Events\Dispatcher;
 use Illuminate\Support\Facades\View;
@@ -10,22 +10,22 @@ use Illuminate\Foundation\AliasLoader;
 use Config;
 use Lang;
 
-use MonstreX\VoyagerExtension\Generators\MediaLibraryPathGenerator;
-use MonstreX\VoyagerExtension\Generators\MediaLibraryUrlGenerator;
+use Lamtin222\VoyagerExtension\Generators\MediaLibraryPathGenerator;
+use Lamtin222\VoyagerExtension\Generators\MediaLibraryUrlGenerator;
 use TCG\Voyager\Facades\Voyager;
 
-use MonstreX\VoyagerExtension\FormFields\AdvImageFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvMediaFilesFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvSelectDropdownTreeFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvFieldsGroupFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvInlineSetFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvJsonFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvRelatedFormField;
-use MonstreX\VoyagerExtension\FormFields\AdvPageLayoutFormField;
+use Lamtin222\VoyagerExtension\FormFields\AdvImageFormField;
+use Lamtin222\VoyagerExtension\FormFields\AdvMediaFilesFormField;
+use Lamtin222\VoyagerExtension\FormFields\AdvSelectDropdownTreeFormField;
+use Lamtin222\VoyagerExtension\FormFields\AdvFieldsGroupFormField;
+use Lamtin222\VoyagerExtension\FormFields\AdvInlineSetFormField;
+use Lamtin222\VoyagerExtension\FormFields\AdvJsonFormField;
+use Lamtin222\VoyagerExtension\FormFields\AdvRelatedFormField;
+use Lamtin222\VoyagerExtension\FormFields\AdvPageLayoutFormField;
 
-use MonstreX\VoyagerExtension\Actions\CloneAction;
+use Lamtin222\VoyagerExtension\Actions\CloneAction;
 
-use MonstreX\VoyagerExtension\Facades;
+use Lamtin222\VoyagerExtension\Facades;
 
 
 class VoyagerExtensionServiceProvider extends ServiceProvider
@@ -50,12 +50,12 @@ class VoyagerExtensionServiceProvider extends ServiceProvider
         if (!config('voyager-extension.legacy_bread_list')) {
             $this->app->bind(
                 'TCG\Voyager\Models\DataType',
-                'MonstreX\VoyagerExtension\Models\DataType'
+                'Lamtin222\VoyagerExtension\Models\DataType'
             );
         }
 
         $voyagerNamespace = config('voyager.controllers.namespace');
-        $VENamespace = 'MonstreX\VoyagerExtension\Controllers';
+        $VENamespace = 'Lamtin222\VoyagerExtension\Controllers';
 
         $VEControllers = [
             ['VoyagerController', 'VoyagerExtensionRootController'],
@@ -231,7 +231,7 @@ class VoyagerExtensionServiceProvider extends ServiceProvider
         Voyager::addFormField(AdvInlineSetFormField::class);
 
         // This field depends on voyager-site package
-        if (find_package('monstrex/voyager-site')) {
+        if (find_package('Lamtin222/voyager-site')) {
             Voyager::addFormField(AdvPageLayoutFormField::class);
         }
 
@@ -264,8 +264,8 @@ class VoyagerExtensionServiceProvider extends ServiceProvider
      */
     public function addRoutes($router){
 
-        $extensionController = '\MonstreX\VoyagerExtension\Controllers\VoyagerExtensionController';
-        $extensionVoyagerController = '\MonstreX\VoyagerExtension\Controllers\VoyagerExtensionBaseController';
+        $extensionController = '\Lamtin222\VoyagerExtension\Controllers\VoyagerExtensionController';
+        $extensionVoyagerController = '\Lamtin222\VoyagerExtension\Controllers\VoyagerExtensionBaseController';
 
         try {
 
