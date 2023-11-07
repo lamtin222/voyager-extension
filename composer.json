@@ -4,12 +4,12 @@
      "license": "MIT",
      "authors": [
        {
-         "name": "Yuriy Ovdeyev",
-         "email": "fido6080net@gmail.com",
-         "homepage": "http://ss-host.ru"
+         "name": "",
+         "email": "",
+         "homepage": ""
        }
      ],
-     "minimum-stability": "stable",
+     "minimum-stability": "dev-main",
      "homepage": "https://github.com/lamtin222/voyager-extension",
      "keywords": [
        "Laravel",

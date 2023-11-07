@@ -32,30 +32,30 @@ New custom fields:
 Via Composer
 
 ``` bash
-$ composer require lamtin222/voyager-extension
+composer require lamtin222/voyager-extension
 ```
 
 Then run migrations:
 
 ``` bash
-$ php artisan migrate
+php artisan migrate
 ```
 
 Publish config if you need:
 ```
-$ php artisan vendor:publish --provider="Lamtin222\VoyagerExtension\VoyagerExtensionServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Lamtin222\VoyagerExtension\VoyagerExtensionServiceProvider" --tag="config"
 ```
 
 To use Image fields you need publish and migrate [laravel-medialibrary](https://docs.spatie.be/laravel-medialibrary/) resources
 
 ``` bash
-$ php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
-$ php artisan migrate
+php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="migrations"
+php artisan migrate
 ```
 
 Optional you may like to publish the config [laravel-medialibrary](https://docs.spatie.be/laravel-medialibrary/) as well
 ``` bash
-$ php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="config"
+php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServiceProvider" --tag="config"
 ```
 
 Configure
