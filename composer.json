@@ -9,7 +9,7 @@
          "homepage": ""
        }
      ],
-     "minimum-stability": "dev-main",
+     "minimum-stability": "dev",
      "homepage": "https://github.com/lamtin222/voyager-extension",
      "keywords": [
        "Laravel",
